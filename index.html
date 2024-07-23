@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>HIELO</title>
+</head>
+<body>
+  <header>
+    <p class="navbar-brand" href="#"><strong> Hielo</strong> by TEMPLATED </p>
+      <div id="menu-Btn" class="menu-Btn"> <p class="menu"> Menu</p> </div>
+        <ul>
+          <li><a href="#">ACCUEIL</a></li>
+          <li><a href="#">DECOUVRIR</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul> 
+      </div>             
+  </header>
+  <div class="home">
+    <img src="image/image.jpg" class="image active">
+    <img src="image/image3.jpg"class="image" >
+    <img src="image/image1.jpg"class="image" >
+    <img src="image/image4.jpg"class="image" >
+    <img src="image/image5.jpg"class="image" >
+  <div class="milieu">
+    <p class="phrase1">A FREE RESPONSIV WEB SITE TEMPLATE BY <strong> TEMPLATED</strong> </p>
+    <hr class="horizontal" width="255px">
+    <h1>HIELO</h1>
+ </div>
+ <div class="slider">
+  <div class="nav-btn active"></div>
+  <div class="nav-btn"></div>
+  <div class="nav-btn"></div>
+  <div class="nav-btn"></div>
+  <div class="nav-btn"></div>
+ </div> 
+</div>
+<div class="grille">
+  <div class="box1">
+    <img src="image/water-1330252_1280.jpg">
+    <p class="phrase2">MAECENAS SAPIEN FEUGIAT EX PURUS</p>
+    <hr class="horizontal" width="255px">
+    <h1 class="titre1"> Lorem ipsum dolor</h1>
+    <p class="phrase3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi sapiente quisquam ipsa est iusto recusandae vel <br>
+       quasi at deleniti blanditiis vero, natus, quia accusamus fugit, harum fugiat. Doloribus, sint! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium commodi minima aut a facere corporis autem ullam architecto accusantium <br>
+        perferendis, vitae exercitationem recusandae molestias vel veniam, officia necessitatibus quis placeat?</p>
+       <button class="boutton1">LEARN MORE</button>
+  </div>
+  <div class="box2">
+    <img src="image/island-2722471_960_720.jpg" >
+    <p class="phrase4">MAECENAS SAPIEN FEUGIAT EX PURUS</p>
+    <hr class="horizontal" width="255px">
+    <h1 class="titre2">Vestibulum sit amet</h1>
+    <p class="phrase5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi sapiente quisquam ipsa est iusto recusandae vel <br>
+       quasi at deleniti blanditiis vero, natus, quia accusamus fugit, harum fugiat. Doloribus, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates impedit, fugiat aliquam harum, quam <br>
+        eos cumque repudiandae rem eius, laboriosam ipsam. Earum, aperiam aliquid? Quas sit eligendi aliquid eaque voluptas?</p>
+       <button class="boutton2">LEARN MORE</button>
+  </div>
+</div>
+<div class="banner">
+<p class="phrase6"> Laudantium, nihil inventore earum modi eius dolorem tempore asperiores similique </p>
+<hr class="horizontal" width="550px">
+<h2 class="one"> Morbi maximus justo</h2>
+</div>
+<div class="avant">
+  <p class="phrase7"> Laudantium, nihil inventore earum modi eius dolorem tempore asperiores similique </p>
+  <hr class="horizontal" width="550px">
+  <h2 class="two"> Morbi maximus justo</h2>
+  <div class="hero">
+    <div class="box grille1"></div>
+    <div class="box grille2"></div>
+    <div class="box grille3"></div>
+    <div class="box grille4"></div>
+</div>
+  </div>
+  <footer>
+    <div class="reseau">
+      <img src="image/images.png"  class="twitter">
+      <img  src="image/face.jpg" class="facebook" >
+      <img  src="image/insta.png" class="instagram">
+      <img src="image/mail.jpg"class="mail" >
+
+    </div>
+    <p class="phrase8"> <strong> Made with </strong> Templated</p>
+  </footer>
+ <script src="code.js">
+  const btns= document.querySelectorAll(".nav-btn");
+  const slides= document.querySelectorAll(".image");
+  var slidernav = function(manual){
+    btns.forEach((btns) => {
+      btn.classList.remove("active");
+    });
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+    btns[manual].classList.add("active")
+    slide[manual].classList.add("active")
+  }
+  btns.forEach((btn,i)=>{
+    btn.addEventListener("click", () => {});
+    slidernav(i);
+  });
+ </script> 
+</body>
+</html>
